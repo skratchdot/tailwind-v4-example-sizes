@@ -24,75 +24,69 @@ I'm comparing:
 ➜ pnpm build
 
 > tailwind-v4-example-sizes@1.0.0 build /Users/jeff/git/tailwind-v4-example-sizes
-> rimraf packages/*/dist; pnpm recursive run --sort build
+> rimraf packages/*/dist; pnpm recursive run --sort --workspace-concurrency 1 build
 
 Scope: 6 of 7 workspace projects
-packages/v3-postcss-no-merge build$ tsc && vite build
-│ vite v6.0.11 building for production...
-│ transforming...
-│ ✓ 28 modules transformed.
-│ rendering chunks...
-│ computing gzip size...
-│ dist/index.html                   0.46 kB │ gzip:  0.30 kB
-│ dist/assets/index-BovOH-IT.css    4.88 kB │ gzip:  1.44 kB
-│ dist/assets/index-CEvKYTCf.js   185.80 kB │ gzip: 58.69 kB
-│ ✓ built in 683ms
-└─ Done in 1.6s
-packages/v4-postcss-merge build$ tsc && vite build
-│ vite v6.0.11 building for production...
-│ transforming...
-│ ✓ 29 modules transformed.
-│ rendering chunks...
-│ computing gzip size...
-│ dist/index.html                   0.46 kB │ gzip:  0.30 kB
-│ dist/assets/index-BO7rpnSk.css   17.98 kB │ gzip:  5.26 kB
-│ dist/assets/index-CKoqq1P6.js   206.05 kB │ gzip: 65.48 kB
-│ ✓ built in 652ms
-└─ Done in 1.6s
-packages/v4-postcss-no-merge build$ tsc && vite build
-│ vite v6.0.11 building for production...
-│ transforming...
-│ ✓ 28 modules transformed.
-│ rendering chunks...
-│ computing gzip size...
-│ dist/index.html                   0.46 kB │ gzip:  0.30 kB
-│ dist/assets/index-BO7rpnSk.css   17.98 kB │ gzip:  5.26 kB
-│ dist/assets/index-DKFB-sBb.js   185.80 kB │ gzip: 58.69 kB
-│ ✓ built in 606ms
-└─ Done in 1.6s
-packages/v3-postcss-merge build$ tsc && vite build
-│ vite v6.0.11 building for production...
-│ transforming...
-│ ✓ 29 modules transformed.
-│ rendering chunks...
-│ computing gzip size...
-│ dist/index.html                   0.46 kB │ gzip:  0.30 kB
-│ dist/assets/index-BovOH-IT.css    4.88 kB │ gzip:  1.44 kB
-│ dist/assets/index-8_suku2W.js   206.05 kB │ gzip: 65.48 kB
-│ ✓ built in 704ms
-└─ Done in 1.7s
-packages/v4-vite-merge build$ tsc && vite build
-│ vite v6.0.11 building for production...
-│ transforming...
-│ ✓ 29 modules transformed.
-│ rendering chunks...
-│ computing gzip size...
-│ dist/index.html                   0.46 kB │ gzip:  0.30 kB
-│ dist/assets/index-CylYwV1o.css   32.96 kB │ gzip:  7.38 kB
-│ dist/assets/index-B_AoSdp_.js   206.05 kB │ gzip: 65.48 kB
-│ ✓ built in 456ms
-└─ Done in 1.2s
-packages/v4-vite-no-merge build$ tsc && vite build
-│ vite v6.0.11 building for production...
-│ transforming...
-│ ✓ 28 modules transformed.
-│ rendering chunks...
-│ computing gzip size...
-│ dist/index.html                   0.46 kB │ gzip:  0.30 kB
-│ dist/assets/index-BJXxG8A1.css   19.76 kB │ gzip:  5.62 kB
-│ dist/assets/index-CC0VxMxM.js   185.80 kB │ gzip: 58.69 kB
-│ ✓ built in 437ms
-└─ Done in 1.2s
+
+> v3-postcss-merge@0.0.0 build /Users/jeff/git/tailwind-v4-example-sizes/packages/v3-postcss-merge
+> tsc && vite build
+
+vite v6.0.11 building for production...
+✓ 29 modules transformed.
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/index-BovOH-IT.css    4.88 kB │ gzip:  1.44 kB
+dist/assets/index-8_suku2W.js   206.05 kB │ gzip: 65.48 kB
+✓ built in 612ms
+
+> v3-postcs-no-merge@0.0.0 build /Users/jeff/git/tailwind-v4-example-sizes/packages/v3-postcss-no-merge
+> tsc && vite build
+
+vite v6.0.11 building for production...
+✓ 28 modules transformed.
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/index-BovOH-IT.css    4.88 kB │ gzip:  1.44 kB
+dist/assets/index-CEvKYTCf.js   185.80 kB │ gzip: 58.69 kB
+✓ built in 564ms
+
+> v4-postcss-merge@0.0.0 build /Users/jeff/git/tailwind-v4-example-sizes/packages/v4-postcss-merge
+> tsc && vite build
+
+vite v6.0.11 building for production...
+✓ 29 modules transformed.
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/index-BO7rpnSk.css   17.98 kB │ gzip:  5.26 kB
+dist/assets/index-CKoqq1P6.js   206.05 kB │ gzip: 65.48 kB
+✓ built in 553ms
+
+> v4-postcss-no-merge@0.0.0 build /Users/jeff/git/tailwind-v4-example-sizes/packages/v4-postcss-no-merge
+> tsc && vite build
+
+vite v6.0.11 building for production...
+✓ 28 modules transformed.
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/index-BO7rpnSk.css   17.98 kB │ gzip:  5.26 kB
+dist/assets/index-DKFB-sBb.js   185.80 kB │ gzip: 58.69 kB
+✓ built in 536ms
+
+> v4-vite-merge@0.0.0 build /Users/jeff/git/tailwind-v4-example-sizes/packages/v4-vite-merge
+> tsc && vite build
+
+vite v6.0.11 building for production...
+✓ 29 modules transformed.
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/index-CylYwV1o.css   32.96 kB │ gzip:  7.38 kB
+dist/assets/index-B_AoSdp_.js   206.05 kB │ gzip: 65.48 kB
+✓ built in 428ms
+
+> v4-vite-no-merge@0.0.0 build /Users/jeff/git/tailwind-v4-example-sizes/packages/v4-vite-no-merge
+> tsc && vite build
+
+vite v6.0.11 building for production...
+✓ 28 modules transformed.
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/index-BJXxG8A1.css   19.76 kB │ gzip:  5.62 kB
+dist/assets/index-CC0VxMxM.js   185.80 kB │ gzip: 58.69 kB
+✓ built in 446ms
 ```
 
 ## CSS Output
