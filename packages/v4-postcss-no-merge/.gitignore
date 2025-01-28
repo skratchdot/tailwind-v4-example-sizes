@@ -1,0 +1,2 @@
+node_modules
+# would usually ignore the "dist" folder as well, but i want to check in the build output so it's easier to view
