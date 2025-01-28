@@ -91,11 +91,11 @@ dist/assets/index-CC0VxMxM.js   185.80 kB │ gzip: 58.69 kB
 
 ## CSS Output
 
-| css file                                                                                                                                                                  |     size | gzip size |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------: | --------: |
-| [v3-postcss-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v3-postcss-merge/dist/assets/index-BovOH-IT.css)       |  4.88 kB |   1.44 kB |
-| [v3-postcss-no-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v3-postcss-no-merge/dist/assets/index-BovOH-IT.css) |  4.88 kB |   1.44 kB |
-| [v4-postcss-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-postcss-merge/dist/assets/index-BO7rpnSk.css)       | 17.98 kB |   5.26 kB |
-| [v4-postcss-no-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-postcss-no-merge/dist/assets/index-BO7rpnSk.css) | 17.98 kB |   5.26 kB |
-| [v4-vite-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-vite-merge/dist/assets/index-CylYwV1o.css)             | 32.96 kB |   7.38 kB |
-| [v4-vite-no-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-vite-no-merge/dist/assets/index-BJXxG8A1.css)       | 19.76 kB |   5.62 kB |
+| css file                                                                                                                                                                  |     size | gzip size | build time |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------: | --------: | ---------- |
+| [v3-postcss-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v3-postcss-merge/dist/assets/index-BovOH-IT.css)       |  4.88 kB |   1.44 kB | 612ms      |
+| [v3-postcss-no-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v3-postcss-no-merge/dist/assets/index-BovOH-IT.css) |  4.88 kB |   1.44 kB | 564ms      |
+| [v4-postcss-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-postcss-merge/dist/assets/index-BO7rpnSk.css)       | 17.98 kB |   5.26 kB | 553ms      |
+| [v4-postcss-no-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-postcss-no-merge/dist/assets/index-BO7rpnSk.css) | 17.98 kB |   5.26 kB | 536ms      |
+| [v4-vite-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-vite-merge/dist/assets/index-CylYwV1o.css)             | 32.96 kB |   7.38 kB | 428ms      |
+| [v4-vite-no-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-vite-no-merge/dist/assets/index-BJXxG8A1.css)       | 19.76 kB |   5.62 kB | 446ms      |
