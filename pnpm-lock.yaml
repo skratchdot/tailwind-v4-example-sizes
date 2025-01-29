@@ -4,6 +4,22 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  tailwindcss3:
+    tailwindcss:
+      specifier: ^3.4.17
+      version: 3.4.17
+  tailwindcss4:
+    '@tailwindcss/postcss':
+      specifier: ^4.0.0
+      version: 4.0.0
+    '@tailwindcss/vite':
+      specifier: ^4.0.0
+      version: 4.0.0
+    tailwindcss:
+      specifier: ^4.0.0
+      version: 4.0.0
+
 importers:
 
   .:
@@ -39,7 +55,7 @@ importers:
         specifier: ^2.6.0
         version: 2.6.0
       tailwindcss:
-        specifier: ^3.4.17
+        specifier: catalog:tailwindcss3
         version: 3.4.17
     devDependencies:
       typescript:
@@ -73,7 +89,7 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
       tailwindcss:
-        specifier: ^3.4.17
+        specifier: catalog:tailwindcss3
         version: 3.4.17
     devDependencies:
       typescript:
@@ -86,7 +102,7 @@ importers:
   packages/v4-postcss-merge:
     dependencies:
       '@tailwindcss/postcss':
-        specifier: ^4.0.0
+        specifier: catalog:tailwindcss4
         version: 4.0.0
       '@types/react':
         specifier: ^19.0.8
@@ -110,7 +126,7 @@ importers:
         specifier: ^2.6.0
         version: 2.6.0
       tailwindcss:
-        specifier: ^4.0.0
+        specifier: catalog:tailwindcss4
         version: 4.0.0
     devDependencies:
       typescript:
@@ -123,7 +139,7 @@ importers:
   packages/v4-postcss-no-merge:
     dependencies:
       '@tailwindcss/postcss':
-        specifier: ^4.0.0
+        specifier: catalog:tailwindcss4
         version: 4.0.0
       '@types/react':
         specifier: ^19.0.8
@@ -144,7 +160,7 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
       tailwindcss:
-        specifier: ^4.0.0
+        specifier: catalog:tailwindcss4
         version: 4.0.0
     devDependencies:
       typescript:
@@ -157,7 +173,7 @@ importers:
   packages/v4-vite-merge:
     dependencies:
       '@tailwindcss/vite':
-        specifier: ^4.0.0
+        specifier: catalog:tailwindcss4
         version: 4.0.0(vite@6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
       '@types/react':
         specifier: ^19.0.8
@@ -178,7 +194,7 @@ importers:
         specifier: ^2.6.0
         version: 2.6.0
       tailwindcss:
-        specifier: ^4.0.0
+        specifier: catalog:tailwindcss4
         version: 4.0.0
     devDependencies:
       typescript:
@@ -191,7 +207,7 @@ importers:
   packages/v4-vite-no-merge:
     dependencies:
       '@tailwindcss/vite':
-        specifier: ^4.0.0
+        specifier: catalog:tailwindcss4
         version: 4.0.0(vite@6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
       '@types/react':
         specifier: ^19.0.8
@@ -209,7 +225,7 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
       tailwindcss:
-        specifier: ^4.0.0
+        specifier: catalog:tailwindcss4
         version: 4.0.0
     devDependencies:
       typescript:
