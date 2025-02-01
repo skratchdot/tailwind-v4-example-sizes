@@ -14,7 +14,7 @@ const main = async () => {
   console.log('building...');
   const { stdout } = await exec(
     'pnpm run clean; pnpm recursive run --sort --workspace-concurrency 1 build',
-    { cwd: ROOT_PATH }
+    { cwd: ROOT_PATH },
   );
   const oldReadme = (await readFile(README_PATH, 'utf-8')).toString();
   const firstSection = oldReadme.split('## Build Output')[0];
@@ -38,9 +38,9 @@ const main = async () => {
       size = `${parts[1]} ${parts[2]}`;
       gzipSize = `${parts[5]} ${parts[6]}`;
     } else if (line.includes(' built in ')) {
-      buildTime = line.split(' ').at(-1);
+      buildTime = line.split(' ').at(-1) ?? '';
       table.push(
-        `| [${projectName}](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/${projectName}/${cssFile}) | ${size} | ${gzipSize} | ${buildTime} |`
+        `| [${projectName}](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/${projectName}/${cssFile}) | ${size} | ${gzipSize} | ${buildTime} |`,
       );
     }
   }

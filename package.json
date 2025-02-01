@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsx ./scripts/build.ts",
-    "clean": "rimraf packages/*/dist"
+    "clean": "rimraf packages/*/dist",
+    "format": "prettier --check --write ."
   },
   "keywords": [],
   "author": "",
