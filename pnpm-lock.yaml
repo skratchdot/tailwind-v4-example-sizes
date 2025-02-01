@@ -19,6 +19,10 @@ catalogs:
     tailwindcss:
       specifier: ^4.0.1
       version: 4.0.1
+  tailwindmerge:
+    tailwind-merge:
+      specifier: ^2.6.0
+      version: 2.6.0
 
 importers:
 
@@ -52,7 +56,7 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
       tailwind-merge:
-        specifier: ^2.6.0
+        specifier: catalog:tailwindmerge
         version: 2.6.0
       tailwindcss:
         specifier: catalog:tailwindcss3
@@ -123,7 +127,7 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
       tailwind-merge:
-        specifier: ^2.6.0
+        specifier: catalog:tailwindmerge
         version: 2.6.0
       tailwindcss:
         specifier: catalog:tailwindcss4
@@ -191,7 +195,7 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
       tailwind-merge:
-        specifier: ^2.6.0
+        specifier: catalog:tailwindmerge
         version: 2.6.0
       tailwindcss:
         specifier: catalog:tailwindcss4
