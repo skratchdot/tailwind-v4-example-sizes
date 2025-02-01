@@ -89,7 +89,6 @@ importers:
       tailwindcss:
         specifier: catalog:tailwindcss3
         version: 3.4.17
-    devDependencies:
       typescript:
         specifier: catalog:common
         version: 5.6.3
@@ -123,7 +122,6 @@ importers:
       tailwindcss:
         specifier: catalog:tailwindcss3
         version: 3.4.17
-    devDependencies:
       typescript:
         specifier: catalog:common
         version: 5.6.3
@@ -160,7 +158,6 @@ importers:
       tailwindcss:
         specifier: catalog:tailwindcss4
         version: 4.0.1
-    devDependencies:
       typescript:
         specifier: catalog:common
         version: 5.6.3
@@ -194,7 +191,6 @@ importers:
       tailwindcss:
         specifier: catalog:tailwindcss4
         version: 4.0.1
-    devDependencies:
       typescript:
         specifier: catalog:common
         version: 5.6.3
@@ -228,7 +224,6 @@ importers:
       tailwindcss:
         specifier: catalog:tailwindcss4
         version: 4.0.1
-    devDependencies:
       typescript:
         specifier: catalog:common
         version: 5.6.3
@@ -259,7 +254,6 @@ importers:
       tailwindcss:
         specifier: catalog:tailwindcss4
         version: 4.0.1
-    devDependencies:
       typescript:
         specifier: catalog:common
         version: 5.6.3

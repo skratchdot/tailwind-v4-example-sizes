@@ -8,10 +8,6 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
-  "devDependencies": {
-    "typescript": "catalog:common",
-    "vite": "catalog:common"
-  },
   "dependencies": {
     "@tailwindcss/vite": "catalog:tailwindcss4",
     "@types/react": "catalog:common",
@@ -20,6 +16,8 @@
     "react": "catalog:common",
     "react-dom": "catalog:common",
     "tailwind-merge": "catalog:tailwindmerge",
-    "tailwindcss": "catalog:tailwindcss4"
+    "tailwindcss": "catalog:tailwindcss4",
+    "typescript": "catalog:common",
+    "vite": "catalog:common"
   }
 }
