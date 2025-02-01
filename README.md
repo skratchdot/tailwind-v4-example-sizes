@@ -39,9 +39,9 @@ computing gzip size...
 dist/index.html                   0.46 kB │ gzip:  0.29 kB
 dist/assets/index-BovOH-IT.css    4.88 kB │ gzip:  1.44 kB
 dist/assets/index-ByHR-Ygr.js   207.71 kB │ gzip: 65.97 kB
-✓ built in 613ms
+✓ built in 609ms
 
-> v3-postcs-no-merge@0.0.0 build /Users/jeff/git/tailwind-v4-example-sizes/packages/v3-postcss-no-merge
+> v3-postcss-no-merge@0.0.0 build /Users/jeff/git/tailwind-v4-example-sizes/packages/v3-postcss-no-merge
 > tsc && vite build
 
 vite v6.0.11 building for production...
@@ -52,7 +52,7 @@ computing gzip size...
 dist/index.html                   0.46 kB │ gzip:  0.29 kB
 dist/assets/index-BovOH-IT.css    4.88 kB │ gzip:  1.44 kB
 dist/assets/index-CEvKYTCf.js   185.80 kB │ gzip: 58.69 kB
-✓ built in 650ms
+✓ built in 600ms
 
 > v4-postcss-merge@0.0.0 build /Users/jeff/git/tailwind-v4-example-sizes/packages/v4-postcss-merge
 > tsc && vite build
@@ -65,7 +65,7 @@ computing gzip size...
 dist/index.html                   0.46 kB │ gzip:  0.29 kB
 dist/assets/index-Bt43YFai.css   17.99 kB │ gzip:  5.26 kB
 dist/assets/index-Dqh69FLN.js   207.71 kB │ gzip: 65.97 kB
-✓ built in 557ms
+✓ built in 537ms
 
 > v4-postcss-no-merge@0.0.0 build /Users/jeff/git/tailwind-v4-example-sizes/packages/v4-postcss-no-merge
 > tsc && vite build
@@ -78,7 +78,7 @@ computing gzip size...
 dist/index.html                   0.46 kB │ gzip:  0.29 kB
 dist/assets/index-Bt43YFai.css   17.99 kB │ gzip:  5.26 kB
 dist/assets/index-DsQGksks.js   185.80 kB │ gzip: 58.69 kB
-✓ built in 547ms
+✓ built in 515ms
 
 > v4-vite-merge@0.0.0 build /Users/jeff/git/tailwind-v4-example-sizes/packages/v4-vite-merge
 > tsc && vite build
@@ -91,7 +91,7 @@ computing gzip size...
 dist/index.html                   0.46 kB │ gzip:  0.29 kB
 dist/assets/index-CLPKK-T9.css   19.77 kB │ gzip:  5.62 kB
 dist/assets/index-DNAAdbYt.js   207.71 kB │ gzip: 65.97 kB
-✓ built in 431ms
+✓ built in 429ms
 
 > v4-vite-no-merge@0.0.0 build /Users/jeff/git/tailwind-v4-example-sizes/packages/v4-vite-no-merge
 > tsc && vite build
@@ -104,16 +104,16 @@ computing gzip size...
 dist/index.html                   0.46 kB │ gzip:  0.29 kB
 dist/assets/index-CLPKK-T9.css   19.77 kB │ gzip:  5.62 kB
 dist/assets/index-BbuEXANm.js   185.80 kB │ gzip: 58.69 kB
-✓ built in 408ms
+✓ built in 413ms
 ```
 
 ## CSS Output
 
 | css file                                                                                                                                                                  |     size | gzip size | build time |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------: | --------: | ---------: |
-| [v3-postcss-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v3-postcss-merge/dist/assets/index-BovOH-IT.css)       |  4.88 kB |   1.44 kB |      613ms |
-| [v3-postcs-no-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v3-postcs-no-merge/dist/assets/index-BovOH-IT.css)   |  4.88 kB |   1.44 kB |      650ms |
-| [v4-postcss-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-postcss-merge/dist/assets/index-Bt43YFai.css)       | 17.99 kB |   5.26 kB |      557ms |
-| [v4-postcss-no-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-postcss-no-merge/dist/assets/index-Bt43YFai.css) | 17.99 kB |   5.26 kB |      547ms |
-| [v4-vite-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-vite-merge/dist/assets/index-CLPKK-T9.css)             | 19.77 kB |   5.62 kB |      431ms |
-| [v4-vite-no-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-vite-no-merge/dist/assets/index-CLPKK-T9.css)       | 19.77 kB |   5.62 kB |      408ms |
+| [v3-postcss-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v3-postcss-merge/dist/assets/index-BovOH-IT.css)       |  4.88 kB |   1.44 kB |      609ms |
+| [v3-postcss-no-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v3-postcss-no-merge/dist/assets/index-BovOH-IT.css) |  4.88 kB |   1.44 kB |      600ms |
+| [v4-postcss-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-postcss-merge/dist/assets/index-Bt43YFai.css)       | 17.99 kB |   5.26 kB |      537ms |
+| [v4-postcss-no-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-postcss-no-merge/dist/assets/index-Bt43YFai.css) | 17.99 kB |   5.26 kB |      515ms |
+| [v4-vite-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-vite-merge/dist/assets/index-CLPKK-T9.css)             | 19.77 kB |   5.62 kB |      429ms |
+| [v4-vite-no-merge](https://raw.githubusercontent.com/skratchdot/tailwind-v4-example-sizes/refs/heads/main/packages/v4-vite-no-merge/dist/assets/index-CLPKK-T9.css)       | 19.77 kB |   5.62 kB |      413ms |
