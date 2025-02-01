@@ -9,16 +9,16 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "typescript": "~5.6.2",
-    "vite": "^6.0.5"
+    "typescript": "catalog:common",
+    "vite": "catalog:common"
   },
   "dependencies": {
     "@tailwindcss/vite": "catalog:tailwindcss4",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
-    "@vitejs/plugin-react": "^4.3.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "@types/react": "catalog:common",
+    "@types/react-dom": "catalog:common",
+    "@vitejs/plugin-react": "catalog:common",
+    "react": "catalog:common",
+    "react-dom": "catalog:common",
     "tailwindcss": "catalog:tailwindcss4"
   }
 }

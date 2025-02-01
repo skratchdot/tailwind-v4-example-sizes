@@ -5,6 +5,34 @@ settings:
   excludeLinksFromLockfile: false
 
 catalogs:
+  common:
+    '@types/react':
+      specifier: ^19.0.8
+      version: 19.0.8
+    '@types/react-dom':
+      specifier: ^19.0.3
+      version: 19.0.3
+    '@vitejs/plugin-react':
+      specifier: ^4.3.4
+      version: 4.3.4
+    autoprefixer:
+      specifier: ^10.4.20
+      version: 10.4.20
+    postcss:
+      specifier: ^8.5.1
+      version: 8.5.1
+    react:
+      specifier: ^19.0.0
+      version: 19.0.0
+    react-dom:
+      specifier: ^19.0.0
+      version: 19.0.0
+    typescript:
+      specifier: ^5.6.2
+      version: 5.6.3
+    vite:
+      specifier: ^6.0.5
+      version: 6.0.11
   tailwindcss3:
     tailwindcss:
       specifier: ^3.4.17
@@ -35,25 +63,25 @@ importers:
   packages/v3-postcss-merge:
     dependencies:
       '@types/react':
-        specifier: ^19.0.8
+        specifier: catalog:common
         version: 19.0.8
       '@types/react-dom':
-        specifier: ^19.0.3
+        specifier: catalog:common
         version: 19.0.3(@types/react@19.0.8)
       '@vitejs/plugin-react':
-        specifier: ^4.3.4
+        specifier: catalog:common
         version: 4.3.4(vite@6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
       autoprefixer:
-        specifier: ^10.4.20
+        specifier: catalog:common
         version: 10.4.20(postcss@8.5.1)
       postcss:
-        specifier: ^8.5.1
+        specifier: catalog:common
         version: 8.5.1
       react:
-        specifier: ^19.0.0
+        specifier: catalog:common
         version: 19.0.0
       react-dom:
-        specifier: ^19.0.0
+        specifier: catalog:common
         version: 19.0.0(react@19.0.0)
       tailwind-merge:
         specifier: catalog:tailwindmerge
@@ -63,44 +91,44 @@ importers:
         version: 3.4.17
     devDependencies:
       typescript:
-        specifier: ~5.6.2
+        specifier: catalog:common
         version: 5.6.3
       vite:
-        specifier: ^6.0.5
+        specifier: catalog:common
         version: 6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0)
 
   packages/v3-postcss-no-merge:
     dependencies:
       '@types/react':
-        specifier: ^19.0.8
+        specifier: catalog:common
         version: 19.0.8
       '@types/react-dom':
-        specifier: ^19.0.3
+        specifier: catalog:common
         version: 19.0.3(@types/react@19.0.8)
       '@vitejs/plugin-react':
-        specifier: ^4.3.4
+        specifier: catalog:common
         version: 4.3.4(vite@6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
       autoprefixer:
-        specifier: ^10.4.20
+        specifier: catalog:common
         version: 10.4.20(postcss@8.5.1)
       postcss:
-        specifier: ^8.5.1
+        specifier: catalog:common
         version: 8.5.1
       react:
-        specifier: ^19.0.0
+        specifier: catalog:common
         version: 19.0.0
       react-dom:
-        specifier: ^19.0.0
+        specifier: catalog:common
         version: 19.0.0(react@19.0.0)
       tailwindcss:
         specifier: catalog:tailwindcss3
         version: 3.4.17
     devDependencies:
       typescript:
-        specifier: ~5.6.2
+        specifier: catalog:common
         version: 5.6.3
       vite:
-        specifier: ^6.0.5
+        specifier: catalog:common
         version: 6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0)
 
   packages/v4-postcss-merge:
@@ -109,22 +137,22 @@ importers:
         specifier: catalog:tailwindcss4
         version: 4.0.1
       '@types/react':
-        specifier: ^19.0.8
+        specifier: catalog:common
         version: 19.0.8
       '@types/react-dom':
-        specifier: ^19.0.3
+        specifier: catalog:common
         version: 19.0.3(@types/react@19.0.8)
       '@vitejs/plugin-react':
-        specifier: ^4.3.4
+        specifier: catalog:common
         version: 4.3.4(vite@6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
       postcss:
-        specifier: ^8.5.1
+        specifier: catalog:common
         version: 8.5.1
       react:
-        specifier: ^19.0.0
+        specifier: catalog:common
         version: 19.0.0
       react-dom:
-        specifier: ^19.0.0
+        specifier: catalog:common
         version: 19.0.0(react@19.0.0)
       tailwind-merge:
         specifier: catalog:tailwindmerge
@@ -134,10 +162,10 @@ importers:
         version: 4.0.1
     devDependencies:
       typescript:
-        specifier: ~5.6.2
+        specifier: catalog:common
         version: 5.6.3
       vite:
-        specifier: ^6.0.5
+        specifier: catalog:common
         version: 6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0)
 
   packages/v4-postcss-no-merge:
@@ -146,32 +174,32 @@ importers:
         specifier: catalog:tailwindcss4
         version: 4.0.1
       '@types/react':
-        specifier: ^19.0.8
+        specifier: catalog:common
         version: 19.0.8
       '@types/react-dom':
-        specifier: ^19.0.3
+        specifier: catalog:common
         version: 19.0.3(@types/react@19.0.8)
       '@vitejs/plugin-react':
-        specifier: ^4.3.4
+        specifier: catalog:common
         version: 4.3.4(vite@6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
       postcss:
-        specifier: ^8.5.1
+        specifier: catalog:common
         version: 8.5.1
       react:
-        specifier: ^19.0.0
+        specifier: catalog:common
         version: 19.0.0
       react-dom:
-        specifier: ^19.0.0
+        specifier: catalog:common
         version: 19.0.0(react@19.0.0)
       tailwindcss:
         specifier: catalog:tailwindcss4
         version: 4.0.1
     devDependencies:
       typescript:
-        specifier: ~5.6.2
+        specifier: catalog:common
         version: 5.6.3
       vite:
-        specifier: ^6.0.5
+        specifier: catalog:common
         version: 6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0)
 
   packages/v4-vite-merge:
@@ -180,19 +208,19 @@ importers:
         specifier: catalog:tailwindcss4
         version: 4.0.1(vite@6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
       '@types/react':
-        specifier: ^19.0.8
+        specifier: catalog:common
         version: 19.0.8
       '@types/react-dom':
-        specifier: ^19.0.3
+        specifier: catalog:common
         version: 19.0.3(@types/react@19.0.8)
       '@vitejs/plugin-react':
-        specifier: ^4.3.4
+        specifier: catalog:common
         version: 4.3.4(vite@6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
       react:
-        specifier: ^19.0.0
+        specifier: catalog:common
         version: 19.0.0
       react-dom:
-        specifier: ^19.0.0
+        specifier: catalog:common
         version: 19.0.0(react@19.0.0)
       tailwind-merge:
         specifier: catalog:tailwindmerge
@@ -202,10 +230,10 @@ importers:
         version: 4.0.1
     devDependencies:
       typescript:
-        specifier: ~5.6.2
+        specifier: catalog:common
         version: 5.6.3
       vite:
-        specifier: ^6.0.5
+        specifier: catalog:common
         version: 6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0)
 
   packages/v4-vite-no-merge:
@@ -214,29 +242,29 @@ importers:
         specifier: catalog:tailwindcss4
         version: 4.0.1(vite@6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
       '@types/react':
-        specifier: ^19.0.8
+        specifier: catalog:common
         version: 19.0.8
       '@types/react-dom':
-        specifier: ^19.0.3
+        specifier: catalog:common
         version: 19.0.3(@types/react@19.0.8)
       '@vitejs/plugin-react':
-        specifier: ^4.3.4
+        specifier: catalog:common
         version: 4.3.4(vite@6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
       react:
-        specifier: ^19.0.0
+        specifier: catalog:common
         version: 19.0.0
       react-dom:
-        specifier: ^19.0.0
+        specifier: catalog:common
         version: 19.0.0(react@19.0.0)
       tailwindcss:
         specifier: catalog:tailwindcss4
         version: 4.0.1
     devDependencies:
       typescript:
-        specifier: ~5.6.2
+        specifier: catalog:common
         version: 5.6.3
       vite:
-        specifier: ^6.0.5
+        specifier: catalog:common
         version: 6.0.11(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0)
 
 packages:
