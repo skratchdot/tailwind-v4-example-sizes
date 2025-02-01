@@ -5,7 +5,8 @@
   "description": "help debug tailwindcss build sizes from v3 to v4",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf packages/*/dist; pnpm recursive run --sort --workspace-concurrency 1 build"
+    "build": "rimraf packages/*/dist; pnpm recursive run --sort --workspace-concurrency 1 build",
+    "clean": "rimraf packages/*/dist"
   },
   "keywords": [],
   "author": "",
