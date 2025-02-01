@@ -9,4 +9,4 @@ catalogs:
     '@tailwindcss/postcss': ^4.0.1
     '@tailwindcss/vite': ^4.0.1
   tailwindmerge:
-    'tailwind-merge': ^2.6.0
+    'tailwind-merge': ^3.0.1
