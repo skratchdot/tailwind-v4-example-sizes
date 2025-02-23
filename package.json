@@ -12,9 +12,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.2.1+sha256.f988f0d93b87e1da2d8cdf6ac7f45a01c6f843ae3606b4ca0f2ffd713b85f975",
+  "packageManager": "pnpm@10.4.1",
   "dependencies": {
-    "prettier": "^3.5.1",
+    "prettier": "^3.5.2",
     "rimraf": "^6.0.1",
     "tsx": "^4.19.3"
   }
